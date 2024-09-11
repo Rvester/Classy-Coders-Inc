@@ -1,4 +1,4 @@
-const Employees = require("./Employees");
+const { Employees } = require("./Employees");
 
 class Manager extends Employees {
   #employeesManaged;
@@ -16,4 +16,6 @@ class Manager extends Employees {
     this.#employeesManaged.push(employee);
   }
 }
-module.exports = Manager;
+module.exports = {
+  Manager,
+};

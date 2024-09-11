@@ -42,4 +42,6 @@ class Employees {
   }
 }
 
-module.exports = Employees;
+module.exports = {
+  Employees,
+};

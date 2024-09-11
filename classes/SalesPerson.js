@@ -1,4 +1,4 @@
-const Employees = require("./Employees");
+const { Employees } = require("./Employees");
 
 class SalesPerson extends Employees {
   #totalSales;
@@ -20,4 +20,6 @@ class SalesPerson extends Employees {
   }
 }
 
-module.exports = SalesPerson;
+module.exports = {
+  SalesPerson,
+};

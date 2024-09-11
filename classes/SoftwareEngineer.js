@@ -1,4 +1,4 @@
-const Employees = require("./Employees");
+const { Employees } = require("./Employees");
 
 class SoftwareEngineer extends Employees {
   #programmingLanguages;
@@ -17,4 +17,6 @@ class SoftwareEngineer extends Employees {
   }
 }
 
-module.exports = SoftwareEngineer;
+module.exports = {
+  SoftwareEngineer,
+};
